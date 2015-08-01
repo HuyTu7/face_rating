@@ -1,6 +1,8 @@
 ###Predicting Attractiveness using Computer Vision
 This is the companion code of my blog [post](http://www.learnopencv.com/computer-vision-for-predicting-facial-attractiveness/).
 
+![alt tag](http://www.learnopencv.com/wp-content/uploads/2015/07/2_det_0.jpg)
+
 
 ### Feature Generation
 The features computation part of the pipeline requires the location of facial landmars of the input images.
