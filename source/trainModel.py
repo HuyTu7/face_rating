@@ -50,11 +50,8 @@ print 'Correlation:', corr
 residue = np.mean((ratings_predict - ratings_test) ** 2)
 print 'Residue:', residue
 
-rangeArray = np.arange(1, 51)
 truth, = plt.plot(ratings_test, 'r')
-# Put a white cross over some of the data.
 prediction, = plt.plot(ratings_predict, 'b')
 plt.legend([truth, prediction], ["Ground Truth", "Prediction"])
 
-#plt.plot(rangeArray, ratings_test, 'r', label='ground truth', rangeArray, ratings_predict, 'b', label='ground truth')
 plt.show()
