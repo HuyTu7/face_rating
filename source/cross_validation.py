@@ -1,12 +1,14 @@
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn import linear_model
+
 from sklearn import decomposition
-from sklearn import cross_validation
+from sklearn import linear_model
+from sklearn.ensemble import RandomForestRegressor
+from sklearn import svm
+from sklearn import gaussian_process
 
 ## read data
-features = np.loadtxt('features_ALL.txt', delimiter=',')
-ratings = np.loadtxt('labels.txt', delimiter=',')
+features = np.loadtxt('../data/features_ALL.txt', delimiter=',')
+ratings = np.loadtxt('../data/ratings.txt', delimiter=',')
 predictions = np.zeros(ratings.size);
 
 for i in range(0, 500):
@@ -21,9 +23,9 @@ for i in range(0, 500):
 	regr = linear_model.LinearRegression()
 	regr.fit(features_train, ratings_train)
 	predictions[i] = regr.predict(features_test)
-	print i
+	print 'number of models trained:', i+1
 
-np.savetxt('cross_valid_predictions.txt', predictions, delimiter=',', fmt = '%.04f')
+np.savetxt('../results/cross_valid_predictions.txt', predictions, delimiter=',', fmt = '%.04f')
 
 corr = np.corrcoef(predictions, ratings)[0, 1]
 print corr
