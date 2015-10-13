@@ -31,7 +31,7 @@ face-rating/
 ```shell
 python trainModel -model linear_model -featuredim 20
 ```
-The -featuredim argument specifies the number of components chosen by PCA. Other supported models are Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
+The `-featuredim` argument specifies the number of components chosen by PCA. Other supported models are Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
 
 ###Requirements
 1. Python 2.7
@@ -40,6 +40,9 @@ The -featuredim argument specifies the number of components chosen by PCA. Other
 
 ###Installing scikit-learn
 Visit the official [installation page](http://scikit-learn.org/stable/install.html) for instructions.
+
+###Dataset
+The [SCUT-FBP](http://www.hcii-lab.net/data/SCUT-FBP/EN/introduce.html) dataset has been used. Please cite their research if you happen to use this dataset. The facial landmarks computer on this particular dataset are available in the `data/` directory. 
 
 ###License
 MIT
