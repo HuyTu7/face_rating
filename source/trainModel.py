@@ -10,7 +10,7 @@ from sklearn import gaussian_process
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-model', type=str, default='linear_model')
-parser.add_argument('-featuredim', type=str, default=20)
+parser.add_argument('-featuredim', type=int, default=20)
 parser.add_argument('-inputfeatures', type=str, default='../data/features_ALL.txt')
 parser.add_argument('-labels', type=str, default='../data/ratings.txt')
 args = parser.parse_args()
