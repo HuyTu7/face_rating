@@ -1,4 +1,4 @@
-###Predicting Attractiveness using Computer Vision
+### Predicting Attractiveness using Computer Vision
 This is the companion code of my blog [post](http://www.learnopencv.com/computer-vision-for-predicting-facial-attractiveness/).
 
 ![alt tag](http://www.learnopencv.com/wp-content/uploads/2015/07/2_det_0.jpg)
@@ -27,22 +27,22 @@ face-rating/
     └── cross_valid_predictions_svm.txt
 ```
 
-###Example Usage
+### Example Usage
 ```shell
 python trainModel -model linear_model -featuredim 20
 ```
 The `-featuredim` argument specifies the number of components chosen by PCA. Other supported models are Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
 
-###Requirements
+### Requirements
 1. Python 2.7
 2. Numpy
 3. scikit-learn
 
-###Installing scikit-learn
+### Installing scikit-learn
 Visit the official [installation page](http://scikit-learn.org/stable/install.html) for instructions.
 
-###Dataset
+### Dataset
 The [SCUT-FBP](http://www.hcii-lab.net/data/SCUT-FBP/EN/introduce.html) dataset has been used. Please cite their research if you happen to use this dataset. The facial landmarks computer on this particular dataset are available in the `data/` directory. 
 
-###License
+### License
 MIT
