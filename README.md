@@ -1,9 +1,9 @@
 ### Predicting Attractiveness using Computer Vision
 Example: 
-![](Figure_1.png)
+![](out_det_0.jpg)
 
 Analysis with Linear Regression: 
-![](out_det_0.)
+![](Figure_1.png)
 
 
 ### Feature Generation
