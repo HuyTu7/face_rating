@@ -71,7 +71,7 @@ def generateAllFeatures(allLandmarkCoordinates):
 
 	return generateFeatures(pointIndices1, pointIndices2, pointIndices3, pointIndices4, allLandmarkCoordinates)
 
-landmarks = numpy.loadtxt('landmarks.txt', delimiter=',', usecols=range(136))
+landmarks = numpy.loadtxt('../data/landmarks.txt', delimiter=',', usecols=range(136))
 
 featuresALL = generateAllFeatures(landmarks)
 numpy.savetxt('features_ALL.txt', featuresALL, delimiter=',', fmt = '%.04f')

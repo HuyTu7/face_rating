@@ -18,13 +18,16 @@ args = parser.parse_args()
 
 features = np.loadtxt(args.inputfeatures, delimiter=',')
 #features = preprocessing.scale(features)
-features_train = features[0:-50]
-features_test = features[-50:]
+features_train = features[0:-51]
+features_test = features[-51:-1]
+
+test = features[-1]
 
 pca = decomposition.PCA(n_components=args.featuredim)
 pca.fit(features_train)
 features_train = pca.transform(features_train)
 features_test = pca.transform(features_test)
+test = pca.transform(test)
 
 ratings = np.loadtxt(args.labels, delimiter=',')
 #ratings = preprocessing.scale(ratings)
@@ -36,7 +39,7 @@ if args.model == 'linear_model':
 elif args.model == 'svm':
 	regr = svm.SVR()
 elif args.model == 'rf':
-	regr = RandomForestRegressor(n_estimators=50, max_depth=None, min_samples_split=1, random_state=0)
+	regr = RandomForestRegressor(n_estimators=50, random_state=0)
 elif args.model == 'gpr':
 	regr = gaussian_process.GaussianProcess(theta0=1e-2, thetaL=1e-4, thetaU=1e-1)
 else:
@@ -49,6 +52,8 @@ print 'Correlation:', corr
 
 residue = np.mean((ratings_predict - ratings_test) ** 2)
 print 'Residue:', residue
+
+print 'Test: %d' % regr.predict(test) 
 
 truth, = plt.plot(ratings_test, 'r')
 prediction, = plt.plot(ratings_predict, 'b')
