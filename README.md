@@ -1,7 +1,11 @@
 ### Predicting Attractiveness using Computer Vision
-This is the companion code of my blog [post](http://www.learnopencv.com/computer-vision-for-predicting-facial-attractiveness/).
+Example: 
 
-![alt tag](http://www.learnopencv.com/wp-content/uploads/2015/07/2_det_0.jpg)
+![](out_det_0.jpg)
+
+Analysis with Linear Regression: 
+
+![](Figure_1.png)
 
 
 ### Feature Generation
