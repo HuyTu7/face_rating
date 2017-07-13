@@ -1,5 +1,8 @@
 ### Predicting Attractiveness using Computer Vision
-Example: 
+
+#### Traditional Machine Learning Method  
+
+Example of extracting facial features: 
 
 ![](out_det_0.jpg)
 
