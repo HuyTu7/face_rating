@@ -42,6 +42,8 @@ The `-featuredim` argument specifies the number of components chosen by PCA. Oth
 
 ### Deep Learning Approach:
 
+Details of the implementation can be found in the paper [`SCUT-FBP: A Benchmark Dataset for Facial Beauty Perception`](https://arxiv.org/pdf/1511.02459.pdf), the result of the creation and research on the dataset. 
+
 [In development process]
 
 ### Requirements
