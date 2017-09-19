@@ -1,14 +1,14 @@
-### Predicting Attractiveness using Computer Vision
+# Predicting Attractiveness using Computer Vision
 
-### Traditional Machine Learning Approach   
+## Traditional Machine Learning Approach   
 
 Example of extracting facial features: 
 
-![](out_det_0.jpg)
+![](/visuals/out_det_0.jpg)
 
 Analysis with Linear Regression: 
 
-![](Figure_1.png)
+![](visuals/Figure_1.png)
 
 
 #### Feature Generation
@@ -40,7 +40,7 @@ python trainModel -model linear_model -featuredim 20
 ```
 The `-featuredim` argument specifies the number of components chosen by PCA. Other supported models are Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
 
-### Deep Learning Approach:
+## Deep Learning Approach:
 
 Details of the implementation can be found in the paper [`SCUT-FBP: A Benchmark Dataset for Facial Beauty Perception`](https://arxiv.org/pdf/1511.02459.pdf), the result of the creation and research on the dataset. 
 
