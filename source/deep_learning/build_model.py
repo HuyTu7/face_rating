@@ -146,3 +146,13 @@ class BeautyModel:
 
     def predict(self):
         pass
+
+if __name__ == '__main__':
+   
+    data = Dataset(dump=True)
+    model = BeautyModel()
+
+    train_x, train_y, test_x, test_y = data.getTrainTest()
+    model.train(train_x, train_y, test_x, test_y)
+    # model.getEvaluate(test_x, test_y)
+    """example data to test the model is working"""
