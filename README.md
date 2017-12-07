@@ -28,8 +28,8 @@ Analysis with Linear Regression:
 Details of the implementation can be found in the paper [`SCUT-FBP: A Benchmark Dataset for Facial Beauty Perception`](https://arxiv.org/pdf/1511.02459.pdf), the result of the creation and research on the dataset. 
 
 #### Model:
-
-
+Network architecture of our CNN for facial beauty prediction:
+![](/visuals/Selection_022.png)
 
 #### Results + Example Usage:
 
