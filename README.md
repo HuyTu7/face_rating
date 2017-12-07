@@ -32,7 +32,10 @@ Network architecture of our CNN for facial beauty prediction:
 ![](/visuals/Selection_022.png)
 
 #### Results + Example Usage:
+The blue block represents the human's rating and the green block represents the model's rating 
+![](/visuals/Selection_023.png)
 
+![](/visuals/Selection_025.png)
 
 
 ## What's included
@@ -44,15 +47,16 @@ face-rating/
 │   ├── landmarks.txt
 │   ├── features_ALL.txt
 ├── source/
-│   ├── generateFeatures.py
-│   ├── trainModel.py
-│   ├── cross_validation.py
-└── results/
-    ├── cross_valid_predictions_knn.txt
-    ├── cross_valid_predictions_gpr.txt
-    ├── cross_valid_predictions_linear.txt
-    ├── cross_valid_predictions_rf.txt
-    └── cross_valid_predictions_svm.txt
+|   ├── machine_learning/    
+│       ├── generateFeatures.py
+│       ├── trainModel.py
+│       ├── cross_validation.py
+|   ├── deep_learning/    
+│       ├── build_model.py
+│       ├── utils.py
+│       ├── face_rating.ipynb
+|   ├── deeplearning_result.ipynb
+|   ├── traditional_result.ipynb
 ```
 
 ### Requirements
