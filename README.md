@@ -60,11 +60,12 @@ face-rating/
 ```
 
 ### Requirements
-1. Python 2.7
-2. Numpy + Pandas
-3. scikit-learn
-4. keras
-5. tensorflow
+- Python 2.7
+- numpy 
+- pandas
+- scikit-learn
+- keras
+- tensorflow
 
 ### Dataset
 The [SCUT-FBP](http://www.hcii-lab.net/data/SCUT-FBP/EN/introduce.html) dataset has been used. Please cite their research if you happen to use this dataset. The facial landmarks computer on this particular dataset are available in the `data/` directory. 
