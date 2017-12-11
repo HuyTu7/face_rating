@@ -32,9 +32,12 @@ Network architecture of our CNN for facial beauty prediction:
 ![](/visuals/Selection_022.png)
 
 #### Results + Example Usage:
-The blue block represents the human's rating and the green block represents the model's rating 
+
+Sample visualized results from the prediction of models for audiences to compare. The blue block represents the human's rating and the green block represents the model's rating 
 ![](/visuals/Selection_023.png)
 
+
+These pictures are celebrities in Vietnamese showbiz community and how their facial beauty were rated by our model. 
 ![](/visuals/Selection_025.png)
 
 
