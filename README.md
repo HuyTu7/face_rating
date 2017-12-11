@@ -11,7 +11,9 @@ The features computation part of the pipeline requires the location of facial la
 python trainModel -model linear_model -featuredim 20
 ```
 
-The `-featuredim` argument specifies the number of components chosen by PCA. Other supported models are Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
+The `-featuredim` argument specifies the number of components chosen by PCA which are how many dimensions to be reduced. 
+
+After PCA, the `-model` argument is used to indicate the traditional machine learning models including Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
 
 
 Example of extracting facial features: 
