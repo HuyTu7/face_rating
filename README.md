@@ -9,7 +9,7 @@ Example of extracting facial features:
 
 ![](/visuals/out_det_0.jpg)
 
-#### Example Usage
+#### Dimensionality Reduction, ML Models, and Evaluation 
 
 ```shell
 python trainModel -model linear_model -featuredim 20
@@ -17,9 +17,9 @@ python trainModel -model linear_model -featuredim 20
 
 The `-featuredim` argument specifies the number of components chosen by PCA which are how many dimensions to be reduced. 
 
-After PCA, the `-model` argument is used to indicate the traditional machine learning models including Support Vector Machines (svm), Random Forests (rf), and Gaussian Process Regression (gpr). Checkout the source to change hyperparameters and other options. 
+After PCA, the `-model` argument is used to indicate the traditional machine learning models including Support Vector Machines (`svm`), Random Forests (`rf`), and Gaussian Process Regression (`gpr`). Checkout the source to change hyperparameters and other options. 
 
-Analysis with Linear Regression: 
+Applying Pearson Correlation for result analysis with learner's prediction. For example, figure below shows PC for evaluation of Linear Regression: 
 
 ![](visuals/Figure_1.png)
 
